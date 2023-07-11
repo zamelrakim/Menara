@@ -37,7 +37,7 @@ const ConfirmPostDeletion = ({ params: { id } }: { params: { id: string } }) => 
 
     return (
         <Modal>
-            <div className="flex flex-col gap-y-3 bg-zinc-900 p-4 rounded">
+            <div className="flex flex-col gap-y-3 bg-zinc-900 p-4 rounded mx-2">
                 <h3 className="font-bold text-xl text-emerald-600">Delete Post</h3>
                 <p className="py-2 text-lg text-white">Are you sure you would like to delete this post?</p>
                 <div className="flex justify-end gap-x-2">
