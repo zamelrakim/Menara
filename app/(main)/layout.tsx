@@ -6,7 +6,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <React.Fragment>
             <Header />
-            <div className="main grow">
+            <div className="main grow px-2">
                 {children}
             </div>
             <Footer />

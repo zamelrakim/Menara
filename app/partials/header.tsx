@@ -8,10 +8,10 @@ const Header = () => {
     const { data: session } = useSession()
 
     return (
-        <div className="flex justify-between rounded bg-black text-white my-2 py-2 shrink-0">
+        <div className="flex justify-between rounded bg-black text-white m-3 py-2 shrink-0">
             <ul className="flex flex-row px-1">
                 <li className="px-1">
-                    <Link href="/" className="font-bold">MENARA</Link>
+                    <Link href="/" className="font-bold text-emerald-600">MENARA</Link>
                 </li>
                 <li className="px-1">
                     <Link href='/messages'>Messages</Link>

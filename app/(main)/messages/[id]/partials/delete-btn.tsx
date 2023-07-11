@@ -5,7 +5,7 @@ import { useSession } from "next-auth/react"
 import { useContext } from "react"
 import { MessageDispatchContext } from "./message-provider"
 
-const DeleteBtn = ({ postId }: { postId: string }) => {
+const DeleteBtn = () => {
     const session = useSession()
 
     const dispatch = useContext(MessageDispatchContext)!

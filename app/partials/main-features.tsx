@@ -17,8 +17,8 @@ const MainFeatures = () => {
 
     return (
         <div className="flex flex-col px-2 py-4">
-            <h3 className="text-center w-full font-semibold text-3xl">Make A Sound</h3>
-            <h4 className="w-full text-center">Post a Message that you would like to put out into the World</h4>
+            <h3 className="text-center w-full font-semibold text-3xl text-emerald-600">Make A Sound</h3>
+            <h4 className="w-full text-center text-white">Post a Message that you would like to put out into the World</h4>
             <button onClick={startBtn} className="text-center bg-black text-white mx-auto p-2 rounded-md my-2">Get Started</button>
         </div>
     )
