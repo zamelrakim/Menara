@@ -38,6 +38,7 @@ export const getPost = async (id: string) => {
             include: {
                 author: {
                     select: {
+                        id: true,
                         name: true
                     }
                 }
@@ -54,6 +55,17 @@ export const addPost = async (post: Post) => {
         const newPost = await db.post.create({
             data: post
         })
+
+        const postAuthor = await db.user.findUnique({
+            where: { id: newPost.authorId },
+            select: {
+                id: true,
+                name: true
+            }
+        })
+
+        newPost.author = postAuthor
+
         return newPost
     } catch (error) {
         console.log(error); 
